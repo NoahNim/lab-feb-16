@@ -1,8 +1,16 @@
+// Moving over prior code from the course Github
+
+var pTagOne = document.getElementById('answer1');
+var pTagTwo = document.getElementById('answer2');
+var pTagThree = document.getElementById('answer3');
+var pTagFour = document.getElementById('answer4');
+var pTagFive = document.getElementById('answer5');
+
 // Problem 1
 
 var sum = function (num1, num2) {
   totalSum = (num1 + num2);
-  //console.log('The sum of ' + num1 + ' and ' + num2 + ' is ' + totalSum);
+  answer1.textContent = ('* Answer: ' + 'The sum of ' + num1 + ' and ' + num2 + ' is ' + totalSum + '.');
   return totalSum;
 }
 
@@ -10,7 +18,7 @@ var sum = function (num1, num2) {
 
 var multiply = function (num1, num2) {
   totalMultiply = (num1 * num2);
-  //console.log('The product of ' + num1 + ' and ' + num2 + ' is ' + totalMultiply);
+  answer2.textContent = ('* Answer: ' + 'The product of ' + num1 + ' and ' + num2 + ' is ' + totalMultiply + '.');
   return totalMultiply;
 }
 
@@ -26,8 +34,8 @@ var sumAndMultiply = function (num1, num2, num3) {
   // Making an array from the totals
   var totalArray = [sum3, multiply3];
   // Logging the totals
-  console.log(num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + sum3);
-  console.log('The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of ' + multiply3);
+  answer3pt1.textContent = ('* Answer (1):  ' + num1 + ' and ' + num2 + ' and ' + num3 + ' sum to ' + sum3 + '.');
+  answer3pt2.textContent = ('* Answer (2):  ' + 'The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of ' + multiply3 + '.');
   return totalArray;
 }
 
@@ -39,7 +47,7 @@ var sumArray = function(array) {
     arrayTotal += array[i];
   }
   console.table(array);
-  console.log(array + ' was passed in as an array of numbers, and ' + arrayTotal + ' is their sum.');
+  answer4.textContent = ('* Answer: ' + array + ' was passed in as an array of numbers, and ' + arrayTotal + ' is their sum.');
 }
 
 // Problem 5
@@ -50,5 +58,5 @@ var multiplyArray = function(array) {
     arrayTotal = arrayTotal * array[i];
   }
   console.table(array);
-  console.log('The numbers ' + array + ' have a product of ' + arrayTotal + '.');
+  answer5.textContent = ('* Answer: ' + 'The numbers ' + array + ' have a product of ' + arrayTotal + '.');
 }
