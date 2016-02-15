@@ -37,8 +37,18 @@ var sumArray = function(array) {
   var arrayTotal = 0;
   for (var i = 0; i < array.length; i++) {
     arrayTotal += array[i];
-    //console.log(array[i]);
   }
   console.table(array);
   console.log(array + ' was passed in as an array of numbers, and ' + arrayTotal + ' is their sum.');
+}
+
+// Problem 5
+
+var multiplyArray = function(array) {
+  var arrayTotal = 1;
+  for (var i = 0; i < array.length; i++) {
+    arrayTotal = arrayTotal * array[i];
+  }
+  console.table(array);
+  console.log('The numbers ' + array + ' have a product of ' + arrayTotal + '.');
 }
