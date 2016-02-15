@@ -30,3 +30,15 @@ var sumAndMultiply = function (num1, num2, num3) {
   console.log('The numbers ' + num1 + ' and ' + num2 + ' and ' + num3 + ' have a product of ' + multiply3);
   return totalArray;
 }
+
+// Problem 4
+
+var sumArray = function(array) {
+  var arrayTotal = 0;
+  for (var i = 0; i < array.length; i++) {
+    arrayTotal += array[i];
+    //console.log(array[i]);
+  }
+  console.table(array);
+  console.log(array + ' was passed in as an array of numbers, and ' + arrayTotal + ' is their sum.');
+}
