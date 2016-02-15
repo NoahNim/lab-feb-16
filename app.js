@@ -67,3 +67,5 @@ var multiplyArray = function(array) {
   answer5.textContent = ('* Answer: ' + 'The numbers ' + array + ' have a product of ' + arrayTotal + '.');
   // I solved this the same way
 }
+
+//Very well done. A lot cleaner than mine.
